@@ -17,6 +17,7 @@ import com.heqing.hq_customview.fragment.CustomVolumeFragment;
 import com.heqing.hq_customview.fragment.DragViewTestFragment;
 import com.heqing.hq_customview.fragment.ElasticListFragment;
 import com.heqing.hq_customview.fragment.FlagBitmapMeshTest;
+import com.heqing.hq_customview.fragment.MyLoadingFragment;
 import com.heqing.hq_customview.fragment.NotificationTest;
 import com.heqing.hq_customview.fragment.RevealLayoutTestFragment;
 import com.heqing.hq_customview.fragment.RingMenuFragment;
@@ -99,6 +100,9 @@ public class CommonActivity extends FragmentActivity{
         }else if (type == FragmentTypeEnum.animation.ordinal()){
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, new AnimationTestFragment()).commit();
+        }else if (type == FragmentTypeEnum.mLoading.ordinal()){
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new MyLoadingFragment()).commit();
         }
     }
 

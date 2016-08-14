@@ -97,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
                 break;
+            case R.id.loading:
+                intent.putExtra("type", FragmentTypeEnum.mLoading.ordinal());
+                startActivity(intent);
+                break;
         }
         overridePendingTransition(R.anim.translate_anim, R.anim.alpha_anim);
     }

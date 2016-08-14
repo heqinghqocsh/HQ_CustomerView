@@ -25,5 +25,6 @@ public enum  FragmentTypeEnum {
     sticky_layout_test,
     notification,
     animation,
+    mLoading,
     ;
 }
