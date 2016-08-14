@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/line_to_arrow">
+
+    <target
+        android:name="line_1"
+        android:animation="@anim/anim_line1" />
+
+    <target
+        android:name="line_3"
+        android:animation="@anim/anim_line3" />
+
+</animated-vector>

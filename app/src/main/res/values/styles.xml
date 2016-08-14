@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="SwitchAnim" parent="@android:style/Animation.Activity">
+        <!--<item name="android:activityOpenEnterAnimation">@anim/anim1</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/anim2</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/anim3</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/anim4</item>-->
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/SwitchAnim</item>
+    </style>
+
+    <style name="item_padding_style">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>
