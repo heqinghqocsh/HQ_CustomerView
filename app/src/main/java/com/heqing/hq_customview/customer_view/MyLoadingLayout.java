@@ -33,7 +33,6 @@ public class MyLoadingLayout extends View{
         mPaint = new Paint();
         mPaint.setColor(Color.WHITE);
         mPaint.setAntiAlias(true);
-//        mPaint.setStrokeWidth(circle_r);
         mPaint.setStyle(Paint.Style.FILL);
     }
 
