@@ -26,5 +26,6 @@ public enum  FragmentTypeEnum {
     notification,
     animation,
     mLoading,
+    TimerTest,
     ;
 }

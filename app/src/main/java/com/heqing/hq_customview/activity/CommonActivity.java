@@ -1,6 +1,5 @@
 package com.heqing.hq_customview.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -26,6 +25,7 @@ import com.heqing.hq_customview.fragment.SlideConflict_1;
 import com.heqing.hq_customview.fragment.SlideConflict_2;
 import com.heqing.hq_customview.fragment.StickyLayoutTestFragment;
 import com.heqing.hq_customview.fragment.SurfaceViewTestFragment;
+import com.heqing.hq_customview.fragment.TimerViewTestFragment;
 
 /**
  * Created by 何清 on 2016/5/28 0028.
@@ -103,6 +103,9 @@ public class CommonActivity extends FragmentActivity{
         }else if (type == FragmentTypeEnum.mLoading.ordinal()){
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, new MyLoadingFragment()).commit();
+        }else if (type == FragmentTypeEnum.TimerTest.ordinal()){
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new TimerViewTestFragment()).commit();
         }
     }
 

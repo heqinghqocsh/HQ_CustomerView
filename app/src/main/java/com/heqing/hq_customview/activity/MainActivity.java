@@ -101,6 +101,10 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("type", FragmentTypeEnum.mLoading.ordinal());
                 startActivity(intent);
                 break;
+            case R.id.timer_test:
+                intent.putExtra("type", FragmentTypeEnum.TimerTest.ordinal());
+                startActivity(intent);
+                break;
         }
         overridePendingTransition(R.anim.translate_anim, R.anim.alpha_anim);
     }
